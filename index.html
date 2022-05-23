@@ -23,10 +23,15 @@
 
        function bildeParadas(){
            if (!klik){
-               b.innerHTML="<img src=arbuzs.jpg>";
+               b.innerHTML="<img src=arbuzs.png>";
            }
        }
-       bildeParadas();
+
+       function nokavet(){
+           setTimeout(bildeParadas,Math.random()*2000);
+       }
+
+       nokavet();
     </script>
 </body>
 </html>
