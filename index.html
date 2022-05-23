@@ -24,6 +24,10 @@
        function bildeParadas(){
            if (!klik){
                b.innerHTML="<img src=arbuzs.png>";
+               klik=true;
+               document.getElementById("bilde").onclick=function(){
+                   bildeParadas();
+               }
            }
        }
 
